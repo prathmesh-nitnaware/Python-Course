@@ -3,10 +3,15 @@
 	deo:300
 	perfume:400"""
 
-items = {
+products = {
     "soap": 100,
     "deo": 300,
     "perfume": 400
 }
 
-print(items)
+a = input("Enter the product name: ").lower()
+
+if a in products:
+    print(f"Price of {a}: {products[a]}")
+else:
+    print("product not available")
