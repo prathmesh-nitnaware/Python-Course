@@ -20,3 +20,5 @@ match num:
         modify()
     case 3:
         delete()
+    case _:
+        print("Invalid choice")
